@@ -1,0 +1,13 @@
+# Learn more about IDP configuration: https://forge.lmig.com/wiki/display/CLOUDFORGE/Identity+%28IDP%29+Pipeline+Automation
+---
+idp:
+  - provider: azure
+    applications:
+      - name: soup-email-summarizer
+        email_address: Ignite@libertymutual.com
+        client: true
+#        resource_access:
+#          - application_name: market_apiappname_environment_1
+#            application_permissions:
+#              - read
+#              - write

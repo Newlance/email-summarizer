@@ -1,0 +1,17 @@
+applications:
+  - name: soup-email-buddy
+    routes:
+      - route: soup-email-buddy-sandbox.us-east-1.np.paas.lmig.com
+    buildpacks:
+      - datadog_supply
+      - nodejs_previous
+    instances: 1
+    memory: 512M
+    timeout: 180
+    env:
+      NODE_ENV: production
+      APP_ENV: development
+      NODE_CONFIG_ENV: development
+      TZ: America/New_York
+    blue-green:
+      health-check-endpoint: /health

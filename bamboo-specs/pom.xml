@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.atlassian.bamboo</groupId>
+    <artifactId>bamboo-specs-parent</artifactId>
+    <version>6.5.0</version>
+    <relativePath></relativePath>
+  </parent>
+  <groupId>com.lmig.forge.bamboo</groupId>
+  <artifactId>pipeline-specification</artifactId>
+  <version>1.0.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>com.atlassian.bamboo</groupId>
+      <artifactId>bamboo-specs-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.atlassian.bamboo</groupId>
+      <artifactId>bamboo-specs</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.lmig.forge.bamboo.specs</groupId>
+      <artifactId>bamboo-pipeline-patterns</artifactId>
+      <version>2.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
